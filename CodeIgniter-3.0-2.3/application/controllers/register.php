@@ -65,7 +65,7 @@ class Register extends CI_Controller{
 	
 	public function check_if_username_exists($requested_username){
 		$this->load->model('new_users');
-		$username_available = $this->users->check_if_username_exists($requested_username);
+		$username_available = $this->new_users->check_if_username_exists($requested_username);
 		if ($username_available){
 			return TRUE;
 		}else{
