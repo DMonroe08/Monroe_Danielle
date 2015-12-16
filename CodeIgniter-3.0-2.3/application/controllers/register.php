@@ -51,12 +51,14 @@ class Register extends CI_Controller{
 				$data['account_created'] = 'Your account has been created.<br/><br/> You may now sign-in';
 				
 				$this->load->view('header');
+				$this->load->view('nav');
 				$this->load->view('signin_page', $data);
 				$this->load->view('footer');
 			} //Ends if
 			else
 			{
 				$this->load->view('header');
+				$this->load->view('nav');
 				$this->load->view('register_page');
 				$this->load->view('footer');
 			} //Ends Else

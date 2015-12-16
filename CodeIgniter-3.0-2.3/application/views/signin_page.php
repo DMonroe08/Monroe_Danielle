@@ -16,8 +16,6 @@
 			echo form_open('signin/validate_credentials');
 			echo form_input('username', 'Username');
 			echo form_password('password', '', 'placeholder="Password" class="password"');
-			
-			echo form_hidden('url', $url_sent_from);
 			echo form_submit('submit', 'Signin');
 			echo form_close();	
 			?>	
